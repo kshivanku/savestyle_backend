@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color Scraper</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="sketch.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      $(document).ready(function(){
+        initialize();
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="enter url to get colors in that page"></input>
+    </form>
+    <h3 id="loading">Loading fonts and colors...</h3>
+    <h1 id="font_heading"></h1>
+    <div id="font_list"></div>
+    <h1 id="color_heading"></h1>
+    <div id="color_blocks" class="clearfix"></div>
+  </body>
+</html>
